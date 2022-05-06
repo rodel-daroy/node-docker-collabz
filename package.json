@@ -1,0 +1,38 @@
+{
+  "name": "collabz-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "NODE_ENV='test' REDIS_URL='redis://localhost:6379?ConnectTimeout=5000&IdleTimeOutSecs=180' MONGO_ATLAS_URI='mongodb://localhost:27017/collabz-test' JWT_KEY='alke4hrqlk34uhq3l4fuqeifuqenviluqn4iuui34u' ENCRYPTION_KEY='fwuh45fl384fq34fmje89fmw458wff34' mocha 'tests/index.js' --bail --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "agenda": "^4.0.1",
+    "agora-access-token": "^2.0.4",
+    "aws-sdk": "^2.852.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.5.0",
+    "forever": "^3.0.4",
+    "fs-extra": "^9.1.0",
+    "ioredis": "^4.23.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mime-types": "^2.1.29",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.18",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "twilio": "^3.57.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "mocha": "^8.3.0",
+    "supertest": "^6.1.3"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+nodemon.json
+.DS_Store
+other/
+tmp/
+dump/
